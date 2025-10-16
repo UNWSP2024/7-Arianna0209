@@ -1,8 +1,8 @@
-# Program #2: Larger than n
-# In a program, write a function (with NO output) that accepts two arguments: number n, and a list.
-# Assume that the list contains numbers.
-# The function shell has been written out on line 30, (def display_larger_than_n_list)
-# and should display all of the numbers in the list that are greater than then number n.
+# Title: List of Numbers Larger than n
+# Author: Arianna Endres
+# Date: 10/15/2025
+
+# This program displays all the numbers in a list that are greater than a certain number n.
 
 def main():
     # Declare local variables
@@ -24,13 +24,17 @@ def main():
     # passing a number and number list as arguments.
     display_larger_than_n_list(number, number_list)
 
-# The display_larger_than_n_list function accepts two arguments:
-# a list, and a number. The function displays all of the numbers
-# in the list that are greater than the number.
+
 def display_larger_than_n_list(n, n_list):
-    # Write your code to display all of the numbers in the list that are greater than then number n. below
-    print('In display_larger_than_n_list')
-        
+    # This function displays all the numbers in the list that are greater than n.
+
+    # Create new list with only the numbers greater than n.
+    numbers_greater_than_number = [item for item in n_list if item > n]
+
+    # Display the list.
+    print(numbers_greater_than_number)
+
+
 # Call the main function.
 if __name__ == '__main__':
     main()
